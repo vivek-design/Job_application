@@ -1,6 +1,13 @@
 package com.embarkx.Firstjobapp.job;
 
+import jakarta.persistence.*;
+
+@Entity // this annotation is used to tell jpa to build relational table
+//@Table(name="job_table")// to customize name of table
+
 public class Job {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String  title;
     private String description;
@@ -8,7 +15,11 @@ public class Job {
     private String maxSalary;
     private String location;
 
-    public Job(Long id, String title, String description, String minSalary, String maxSalary, String location) {
+    public Job() {
+
+    }
+
+    public Job(long id, String title, String description, String minSalary, String maxSalary, String location ) {
         this.id = id;
         this.title = title;
         this.description = description;

@@ -1,0 +1,11 @@
+JPA(java persistent api ) allows us to convert java object into
+relational database tables
+
+Advantages of JPA
+Easy and simple
+Makes querying easier
+Allows to save and update objects(Don't need to specify DML language to save and update have inbuilt functionality )
+Easy integration with spring Boot
+
+
+
