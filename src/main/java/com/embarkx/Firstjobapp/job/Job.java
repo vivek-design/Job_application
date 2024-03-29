@@ -1,5 +1,6 @@
 package com.embarkx.Firstjobapp.job;
 
+import com.embarkx.Firstjobapp.company.Company;
 import jakarta.persistence.*;
 
 @Entity // this annotation is used to tell jpa to build relational table
@@ -15,8 +16,19 @@ public class Job {
     private String maxSalary;
     private String location;
 
+    @ManyToOne
+    private Company company;
+
     public Job() {
 
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
     }
 
     public Job(long id, String title, String description, String minSalary, String maxSalary, String location ) {

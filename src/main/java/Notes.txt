@@ -8,4 +8,7 @@ Allows to save and update objects(Don't need to specify DML language to save and
 Easy integration with spring Boot
 
 
-
+Spring Boot actuator
+Introduction: Spring Boot Actuator is a module that provides production-ready features to monitor and manage your Spring Boot
+application
+It offers various endpoints and metrics that can be used for monitoring, health checks, auditing, and managing your application.
